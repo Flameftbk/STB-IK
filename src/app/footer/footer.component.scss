@@ -1,0 +1,40 @@
+@import "../../variables.scss";
+
+.footer {
+	line-height: 1.5rem;
+	padding-bottom: 1.5rem;
+	padding-top: 1.5rem;
+	background-color: #363636;
+}
+.content {
+	color: $grey-lighter;
+	font-size: 0.9rem;
+}
+a {
+	color: $white;
+}
+a:hover {
+	color: $orange;
+}
+
+.subtitle .title{
+	margin-top: 1.5rem;
+}
+
+.subtitle {
+	margin-top: 1.5rem;
+	margin-bottom: 0rem;
+}
+
+.container {
+	width: 99%;
+	margin-left: 0rem;
+	margin-right: 0rem;
+	max-width: 2000px;
+}
+
+.scroll-up {
+	position: absolute;
+	right: 0.75rem;
+	bottom: -3.5rem;
+}

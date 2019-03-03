@@ -1,1 +1,128 @@
-/* You can add global styles to this file, and also import other style files */
+@import "/variables.scss";
+@import "../node_modules/aos/src/sass/aos.scss";
+
+a {
+  color: $white;
+}
+
+a:hover {
+  color: $primary;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.brand-logo {
+  color: $primary;
+  font-style: strong;
+}
+
+body {
+  background-color: #e2e2ec;
+}
+
+.padding-general {
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+}
+
+.hidden {
+  display: none;
+}
+
+nav {
+  // background-color: transparent;
+  // background-image: none;
+  padding-left: calc(1.5rem + 1.5%);
+  padding-right: calc(1.5rem + 1.5%);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 1024px) {
+  .fh {
+    height: 100vh!important;
+  }
+} 
+
+.down {
+  position: absolute;
+  bottom: 5%;
+}
+
+.container {
+  height: 100%;
+  max-width: 100%;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.button {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: all .2s ease-in-out;
+} 
+
+.button:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+}
+
+.card {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: all .2s ease-in-out;
+  background-color: #fff;
+  color: #4a4a4a;
+  max-width: 100%;
+  position: relative;
+}
+
+.card:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+}
+
+.card-image {
+  display: block;
+  position: relative;
+}
+
+.card-header {
+  background-color: transparent;
+  padding: 1.5rem;
+}
+
+.card-content {
+  background-color: transparent;
+  padding: 1.5rem;
+}
+
+.title {
+  color: $red;
+}
+
+.fit {
+  height: calc(100% - 2.8125rem - 1.5rem);
+}
+
+.size {
+  height: 100%;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5){
+
+  html,
+  body{
+    width:100%;
+    overflow-x:hidden;
+  }
+
+}
