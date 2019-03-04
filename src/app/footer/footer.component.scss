@@ -4,17 +4,17 @@
 	line-height: 1.5rem;
 	padding-bottom: 1.5rem;
 	padding-top: 1.5rem;
-	background-color: #363636;
+	background-color: $white;
 }
 .content {
-	color: $grey-lighter;
+	color: $dark;
 	font-size: 0.9rem;
 }
 a {
-	color: $white;
+	color: $black;
 }
 a:hover {
-	color: $orange;
+	color: $red;
 }
 
 .subtitle .title{

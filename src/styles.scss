@@ -1,5 +1,6 @@
 @import "/variables.scss";
 @import "../node_modules/aos/src/sass/aos.scss";
+@import "~ngx-smart-modal/ngx-smart-modal";
 
 a {
   color: $white;
@@ -37,6 +38,12 @@ nav {
   padding-left: calc(1.5rem + 1.5%);
   padding-right: calc(1.5rem + 1.5%);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.1);
+  padding-bottom: 0.5rem!important;
+  padding-top: 0.5rem!important;
 }
 
 @media (min-width: 1024px) {
@@ -118,11 +125,51 @@ only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
 only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5){
-
   html,
   body{
     width:100%;
     overflow-x:hidden;
   }
+}
 
+.nsm-dialog {
+  width: 100%;
+  top: 0; left: 0; bottom: 0; right: 0;
+  margin: auto;
+  position: absolute;
+  min-height: 200px;
+  max-width: 2000px;
+}
+
+.tour {
+  position: fixed;
+  top: 1.5rem;
+  right: 5rem;
+}
+
+/* open-sans-regular - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/open-sans-v15-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Open Sans Regular'), local('OpenSans-Regular'),
+       url('./assets/fonts/open-sans-v15-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./assets/fonts/open-sans-v15-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./assets/fonts/open-sans-v15-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('./assets/fonts/open-sans-v15-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./assets/fonts/open-sans-v15-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+/* open-sans-600 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./assets/fonts/open-sans-v15-latin-600.eot'); /* IE9 Compat Modes */
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'),
+       url('./assets/fonts/open-sans-v15-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./assets/fonts/open-sans-v15-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./assets/fonts/open-sans-v15-latin-600.woff') format('woff'), /* Modern Browsers */
+       url('./assets/fonts/open-sans-v15-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./assets/fonts/open-sans-v15-latin-600.svg#OpenSans') format('svg'); /* Legacy iOS */
 }

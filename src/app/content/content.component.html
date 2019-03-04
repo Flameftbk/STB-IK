@@ -13,6 +13,13 @@
       <p class="is-hidden-mobile" data-aos="fade-right" data-aos-once="true" data-aos-delay="2600">Eine zeitgemäße Beratung braucht heute mehr denn je umfassende Kenntnisse, gerade auch im Hinblick auf die derzeit nicht immer klar abschätzbare Entwicklung mancher Fragen des Steuerrechts in der Zukunft.</p>
       <br>
       <p data-aos="fade-right" data-aos-once="true" data-aos-delay="2900">Wir beraten Sie zuverlässig, kompetent und nachhaltig, und das <strong>nicht nur in deutscher Sprache</strong>.</p>
+      <div data-aos="fade-right" data-aos-once="true" data-aos-delay="3000" style="margin-top: 24px;">
+        <a class="button is-primary is-hidden-touch" (click)="startTour()">
+          <span class="icon">
+            <i class="fas fa-play"></i>
+          </span>
+        </a>
+      </div>
     </div>
   </div>
   <div class="hero-foot">
@@ -134,7 +141,7 @@
         <div class="tile is-3 is-vertical is-parent">
           <div class="container" data-aos="fade-right">
             <div class="content">
-              <p class="subtitle is-5">Übersicht</p>
+              <p class="subtitle is-5">Ausschreibungen</p>
               <p class="title is-2" style="margin-bottom: 1.5rem;">Wir suchen:</p>
               <a class="button is-primary is-large">
                 <span>Steuerberater (m/w/d)</span>
@@ -147,10 +154,14 @@
             <div class="card size">
               <div class="card-content">
                 <p class="title is-2">Jobs</p>
-                <p class="subtitle">Aktuelle Jobausschreibungen</p>
+                <p class="subtitle">Ihr Ansprechpartner</p>
                 <div class="content">
-                  <p>Mit unserem Team von Mitarbeiterinnen und einem Steuerberater/vBP als Kanzleiinhaber, stellen wir uns als versiertes und qualifiziertes Team allen Ihren Wünschen und Ansprüchen. Ihre persönliche Betreuung ist bei uns ein "Muss". Sie sind keine "Nummer" und müssen auch keine "ziehen" um von uns betreut und beraten zu werden.</p>
-                  <p>Unsere Mitarbeiterinnen verfügen über umfangreiche Erfahrungen in der steuerlichen und betriebswirtschaftlichen Beratung. Wir bieten Ihnen unsere Dienstleistungen gut, verlässlich, kostengünstig und flexibel an.</p>
+                  <p style="margin-bottom: 0;"><strong>Ingo Kneisel</strong></p>
+                  <p style="margin-bottom: 0;">Durchwahl: 0521 92420 - 21</p>
+                  <a style="color: #880807;">info@ingo-kneisel.de</a>
+                  <br>
+                  <br>
+                  <p>Bitte bewerben Sie sich, gerne per E-Mail!</p>
                 </div>
               </div>
             </div>
@@ -167,7 +178,7 @@
             <div class="card" style="height: 100%;">
               <div class="card-content">
                 <p class="title is-2">Steuerberater Ingo Kneisel</p>
-                <p class="subtitle">Steuerberater, vereidigter Buchprüfer</p>
+                <p class="subtitle">Kontakt</p>
                 <div class="content">
                   <p style="margin-bottom: 0;">Potsdamer Str. 148a</p>
                   <p>33719 Bielefeld</p>
@@ -202,7 +213,7 @@
   <div class="hero-body">
       <div class="tile is-ancestor">
         <div class="tile is-12 is-vertical is-parent">
-          <div class="container" data-aos="flip-right">
+          <div class="container">
             <div class="card" style="height: 100%;">
                 <div #gmap style="width:100%;height:70vh"></div>
             </div>

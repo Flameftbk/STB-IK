@@ -1,6 +1,7 @@
 /// <reference types="@types/googlemaps" />
 import { Component, OnInit } from '@angular/core';
 import { ViewChild } from '@angular/core';
+import { TourService } from '../tour.service';
 
 @Component({
   selector: 'app-content',
@@ -12,7 +13,7 @@ export class ContentComponent implements OnInit {
   map: google.maps.Map;
   marker: google.maps.Marker;
 
-  constructor() { }
+  constructor(private ts: TourService) { }
 
   ngOnInit() {
     setTimeout(() =>{
@@ -44,9 +45,46 @@ export class ContentComponent implements OnInit {
   goToYourXpert() {
     window.open('https://www.yourxpert.de/xpert/steuerberater/ingo.kneisel', '_blank');
   }
+
   scrollTo(param) {
     const height = document.documentElement.clientHeight * param;
     window.scrollTo(0, height);
+  }
+
+  startTour() {
+    this.ts.tourActive = true;
+    this.scrollTo(0.70);
+    setTimeout(() => {
+      if (this.ts.stopped === true) {
+        return;
+      }
+      this.scrollTo(1.70);
+      setTimeout(() => {
+        if (this.ts.stopped === true) {
+          return;
+        }
+        this.scrollTo(2.70);
+        setTimeout(() => {
+          if (this.ts.stopped === true) {
+            return;
+          }
+          this.scrollTo(3.70);
+          setTimeout(() => {
+            if (this.ts.stopped === true) {
+              return;
+            }
+            this.scrollTo(4.70);
+            setTimeout(() => {
+              if (this.ts.stopped === true) {
+                return;
+              }
+              this.scrollTo(5.8250);
+              this.ts.tourActive = false;
+            }, 5000);
+          }, 5000);
+        }, 5000);
+      }, 5000);
+    }, 5000);
   }
 
 }

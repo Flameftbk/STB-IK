@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgxSmartModalService } from 'ngx-smart-modal';
 
 @Component({
   selector: 'app-footer',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  constructor(private ngxSmartModalService: NgxSmartModalService) { }
 
   ngOnInit() {
+  }
+  openImpressum() {
+    this.ngxSmartModalService.getModal('impressumModal').open();
+  }
+
+  openDatenschutz() {
+    this.ngxSmartModalService.getModal('datenschutzModal').open();
   }
 
 }
