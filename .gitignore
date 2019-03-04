@@ -30,6 +30,7 @@ speed-measure-plugin.json
 
 # misc
 /.firebase
+firebase-debug.log
 /.sass-cache
 /connect.lock
 /coverage
