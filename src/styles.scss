@@ -1,5 +1,9 @@
 @import "/variables.scss";
 @import "../node_modules/aos/src/sass/aos.scss";
+
+
+$transition-duration: 700ms;
+$transition-timing-function: ease-in-out;
 @import "~ngx-smart-modal/ngx-smart-modal";
 
 a {
@@ -132,13 +136,8 @@ only screen and (min-device-pixel-ratio: 1.5){
   }
 }
 
-.nsm-dialog {
+.fullscreen-modal {
   width: 100%;
-  top: 0; left: 0; bottom: 0; right: 0;
-  margin: auto;
-  position: absolute;
-  min-height: 200px;
-  max-width: 2000px;
 }
 
 .tour {

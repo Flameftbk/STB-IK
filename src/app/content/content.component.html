@@ -77,7 +77,7 @@
               <p class="title is-2" style="margin-bottom: 1.5rem;">Das Team</p>
               <p class="subtitle is-5">persönlich, kompetent, erreichbar</p>
               <p>Für alle Problemstellungen ist stets eine unserer Mitarbeiterinnen verantwortlich, die Sie in allen Angelegenheiten und Fragen ansprechen können. So stellen wir sicher, dass Sie fachlich stets optimal beraten werden, ohne dass der persönliche Kontakt verloren geht.</p>
-              <a class="button is-primary is-large">
+              <a class="button is-primary is-large" (click)="openTeam()">
                 <span>Team ansehen</span>
               </a>
             </div>
@@ -125,7 +125,7 @@
               <p class="title is-2" style="margin-bottom: 1.5rem;">Übersicht</p>
               <p class="subtitle is-5">Dienstleistungsangebot</p>
               <p>Interesse geweckt? Informieren Sie sich gerne im Detail über unser Dienstleistungsangebot.</p>
-              <a class="button is-primary is-large">
+              <a class="button is-primary is-large" (click)="openServices()">
                 <span>Mehr erfahren</span>
               </a>
             </div>
@@ -143,7 +143,7 @@
             <div class="content">
               <p class="subtitle is-5">Ausschreibungen</p>
               <p class="title is-2" style="margin-bottom: 1.5rem;">Wir suchen:</p>
-              <a class="button is-primary is-large">
+              <a class="button is-primary is-large" (click)="openJob('1')">
                 <span>Steuerberater (m/w/d)</span>
               </a>
             </div>
@@ -214,11 +214,33 @@
       <div class="tile is-ancestor">
         <div class="tile is-12 is-vertical is-parent">
           <div class="container">
-            <div class="card" style="height: 100%;">
-                <div #gmap style="width:100%;height:70vh"></div>
+            <div class="card" style="height: 100%; overflow: hidden;">
+                <div #gmap style="height:70vh;"></div>
             </div>
           </div>
         </div>
       </div>
   </div>
 </section>
+<ngx-smart-modal #teamModal identifier="teamModal" [closable]="true" [dismissable]="true" [escapable]="true">
+    <div class="container">
+        <p class="title">Die Gesichter</p>
+        <h3 class="subtitle">Ingo Kneisel & Team</h3>
+        <p>Dieser Inhalt befindet sich noch in der Erstellung.</p>
+    </div>
+</ngx-smart-modal>
+<ngx-smart-modal #jobModal1 identifier="jobModal1" [closable]="true" [dismissable]="true" [escapable]="true">
+    <div class="container">
+        <p class="title">Steuerberater (m/w/d)</p>
+        <h3 class="subtitle">Karriere</h3>
+        <p>Wir schreiben derzeit eine Anstellung für eine/n Steuerberater/in, entweder im Rahmen eines Anstellungsverhältnisses gem. § 58 StBerG oder einer freiberuflichen Zusammenarbeit aus. Es besteht auch die Möglichkeit, einer/m Kollegen/in der/die bereits selbst über einen eigenen kleinen Mandantenstamm verfügt, einen Arbeitsplatz, z. B. im Rahmen einer Bürogemeinschaft und/odere einer freien Mitarbeit in unserer Kanzlei zu bieten.</p>
+        <p>Geplant ist längerfristig die Übergabe der Kanzlei an eine/n Nachfolger/in , der/dem sich damit sodann die Möglichkeit eröffnen könnte, unsere Mandanten und unser Umfeld kennenzulernen.</p>
+    </div>
+</ngx-smart-modal>
+<ngx-smart-modal #servicesModal identifier="servicesModal" [closable]="true" [dismissable]="true" [escapable]="true">
+    <div class="container">
+        <p class="title">Unsere Dienstleistungen ...</p>
+        <h3 class="subtitle">... im Detail</h3>
+        <p>Dieser Inhalt befindet sich noch in der Erstellung.</p>
+    </div>
+</ngx-smart-modal>

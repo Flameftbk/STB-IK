@@ -2,6 +2,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ViewChild } from '@angular/core';
 import { TourService } from '../tour.service';
+import { NgxSmartModalService } from 'ngx-smart-modal';
 
 @Component({
   selector: 'app-content',
@@ -13,7 +14,7 @@ export class ContentComponent implements OnInit {
   map: google.maps.Map;
   marker: google.maps.Marker;
 
-  constructor(private ts: TourService) { }
+  constructor(private ts: TourService, private ngxSmartModalService: NgxSmartModalService) { }
 
   ngOnInit() {
     setTimeout(() =>{
@@ -85,6 +86,18 @@ export class ContentComponent implements OnInit {
         }, 5000);
       }, 5000);
     }, 5000);
+  }
+
+  openJob(param) {
+    this.ngxSmartModalService.getModal('jobModal' + param).open();
+  }
+
+  openTeam() {
+    this.ngxSmartModalService.getModal('teamModal').open();
+  }
+
+  openServices() {
+    this.ngxSmartModalService.getModal('servicesModal').open();
   }
 
 }
