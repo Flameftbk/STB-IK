@@ -23,6 +23,7 @@
     "aos": "^2.3.4",
     "bulma": "^0.7.4",
     "core-js": "^2.5.4",
+    "default-passive-events": "^1.0.10",
     "ngx-smart-modal": "^7.1.1",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
