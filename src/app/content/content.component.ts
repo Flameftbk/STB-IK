@@ -17,7 +17,7 @@ export class ContentComponent implements OnInit {
   constructor(private ts: TourService, private ngxSmartModalService: NgxSmartModalService) { }
 
   ngOnInit() {
-    setTimeout(() =>{
+    setTimeout(() => {
       const mapProp = {
         center: new google.maps.LatLng(52.0120184, 8.5977109),
         zoom: 15,

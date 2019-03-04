@@ -30,6 +30,7 @@ export class AppComponent implements OnInit {
       anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
     });
     const typed = new Typed('#typed', {
+      // tslint:disable-next-line: max-line-length
       strings: ['Herzlich Willkommen auf unserer Website!^1800', 'Herzlich Willkommen auf unserer Website!<br> Scrollen Sie herunter und sehen Sie sich um!^1000', 'Herzlich Willkommen auf unserer Website!'],
       typeSpeed: 20,
       startDelay: 500,
