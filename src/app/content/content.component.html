@@ -158,7 +158,7 @@
                 <div class="content">
                   <p style="margin-bottom: 0;"><strong>Ingo Kneisel</strong></p>
                   <p style="margin-bottom: 0;">Durchwahl: 0521 92420 - 21</p>
-                  <a style="color: #880807;">info@ingo-kneisel.de</a>
+                  <a class="link" href="mailto:info@ingo-kneisel.de">info@ingo-kneisel.de</a>
                   <br>
                   <br>
                   <p>Bitte bewerben Sie sich, gerne per E-Mail!</p>
@@ -184,7 +184,7 @@
                   <p>33719 Bielefeld</p>
                   <p style="margin-bottom: 0;">Telefon: 0521 92420 - 0</p>
                   <p>Telefax: 0521 92420 - 20</p>
-                  <a style="color: #880807;">info@ingo-kneisel.de</a>
+                  <a class="link" rel="noopener" href="mailto:info@ingo-kneisel.de">info@ingo-kneisel.de</a>
                 </div>
               </div>
             </div>
@@ -223,24 +223,107 @@
   </div>
 </section>
 <ngx-smart-modal #teamModal identifier="teamModal" [closable]="true" [dismissable]="true" [escapable]="true">
-    <div class="container">
-        <p class="title">Die Gesichter</p>
-        <h3 class="subtitle">Ingo Kneisel & Team</h3>
-        <p>Dieser Inhalt befindet sich noch in der Erstellung.</p>
+    <p class="title">Ingo Kneisel & Team</p>
+    <h3 class="subtitle">Ihre Ansprechpartner</h3>
+    <div class="mitarbeiter">
+      <article class="media">
+        <figure class="media-left">
+          <figure class="image is-96x96 is-rounded">
+            <img class="rounded-edges" src="../../assets/and.jpg" alt="Andrea Schengbier">
+          </figure>
+        </figure>
+        <div class="media-content">
+          <p><strong>Andrea Schengbier</strong></p>
+          <p>Steuerfachangestellte</p>
+          <p><span class="is-hidden-mobile">Durchwahl: </span>0521 92420 - 24</p>
+          <p><a class="link is-hidden-mobile" href="mailto:andreaschengbier@ingo-kneisel.de">andreaschengbier@ingo-kneisel.de</a></p>
+          <p><a class="link is-hidden-tablet" href="mailto:andreaschengbier@ingo-kneisel.de">E-Mail</a></p>
+        </div>
+      </article>
+      <hr>
+      <article class="media">
+        <figure class="media-left">
+          <figure class="image is-96x96 is-rounded">
+            <img class="rounded-edges" src="../../assets/akuebler.jpg" alt="Anette Kübler">
+          </figure>
+        </figure>
+        <div class="media-content">
+          <p><strong>Anette Kübler</strong></p>
+          <p>Steuerfachangestellte</p>
+          <p><span class="is-hidden-mobile">Durchwahl: </span>0521 92420 - 23</p>
+          <a class="link is-hidden-mobile" href="mailto:anettekuebler@ingo-kneisel.de">anettekuebler@ingo-kneisel.de</a>
+          <a class="link is-hidden-tablet" href="mailto:anettekuebler@ingo-kneisel.de">E-Mail</a>
+        </div>
+      </article>
+      <hr>
+      <article class="media">
+        <figure class="media-left">
+          <figure class="image is-96x96 is-rounded">
+            <img class="rounded-edges" src="../../assets/ew.jpg" alt="Ewa Oziembala">
+          </figure>
+        </figure>
+        <div class="media-content">
+          <p><strong>Ewa Oziembala <span class="is-hidden-mobile">M.Sc.</span></strong></p>
+          <p>Steuerfachangestellte</p>
+          <p><span class="is-hidden-mobile">Durchwahl: </span>0521 92420 - 22</p>
+          <a class="link is-hidden-mobile" href="mailto:ewaoziembala@ingo-kneisel.de">ewaoziembala@ingo-kneisel.de</a>
+          <a class="link is-hidden-tablet" href="mailto:ewaoziembala@ingo-kneisel.de">E-Mail</a>
+        </div>
+      </article>
+      <hr>
+      <article class="media">
+        <figure class="media-left">
+          <figure class="image is-96x96 is-rounded">
+            <img class="rounded-edges" src="../../assets/skneisel.jpg" alt="Susanne Kneisel">
+          </figure>
+        </figure>
+        <div class="media-content">
+          <p><strong>Susanne Kneisel</strong></p>
+          <p>Steuerfachangestellte</p>
+          <p><span class="is-hidden-mobile">Durchwahl: </span>0521 92420 - 0</p>
+          <a class="link is-hidden-mobile" href="mailto:susannekneisel@ingo-kneisel.de">susannekneisel@ingo-kneisel.de</a>
+          <a class="link is-hidden-tablet" href="mailto:susannekneisel@ingo-kneisel.de">E-Mail</a>
+        </div>
+      </article>
+      <hr>
+      <article class="media">
+        <figure class="media-left">
+          <figure class="image is-96x96 is-rounded">
+            <img class="rounded-edges" src="../../assets/nklein.jpg" alt="">
+          </figure>
+        </figure>
+        <div class="media-content">
+          <p><strong>Nicole Klein</strong></p>
+          <p>Auszubildende <span class="is-hidden-mobile">zur Kauffrau für Büromanagement</span></p>
+          <p><span class="is-hidden-mobile">Durchwahl: </span>0521 92420 - 26</p>
+          <a class="link is-hidden-mobile" href="mailto:nicoleklein@ingo-kneisel.de">nicoleklein@ingo-kneisel.de</a>
+          <a class="link is-hidden-tablet" href="mailto:nicoleklein@ingo-kneisel.de">E-Mail</a>
+        </div>
+      </article>
+      <article class="media">
+        <figure class="media-left">
+          <figure class="image is-96x96 is-rounded">
+            <img class="rounded-edges" src="../../assets/ikneisel.png" alt="Ingo Kneisel">
+          </figure>
+        </figure>
+        <div class="media-content">
+          <p><strong>Ingo Kneisel</strong></p>
+          <p>Steuerberater, vereidigter Buchprüfer</p>
+          <p><span class="is-hidden-mobile">Durchwahl: </span>0521 92420 - 21</p>
+          <a class="link is-hidden-mobile" href="mailto:info@ingo-kneisel.de">info@ingo-kneisel.de</a>
+          <a class="link is-hidden-tablet" href="mailto:info@ingo-kneisel.de">E-Mail</a>
+        </div>
+      </article>
     </div>
 </ngx-smart-modal>
 <ngx-smart-modal #jobModal1 identifier="jobModal1" [closable]="true" [dismissable]="true" [escapable]="true">
-    <div class="container">
-        <p class="title">Steuerberater (m/w/d)</p>
-        <h3 class="subtitle">Karriere</h3>
-        <p>Wir schreiben derzeit eine Anstellung für eine/n Steuerberater/in, entweder im Rahmen eines Anstellungsverhältnisses gem. § 58 StBerG oder einer freiberuflichen Zusammenarbeit aus. Es besteht auch die Möglichkeit, einer/m Kollegen/in der/die bereits selbst über einen eigenen kleinen Mandantenstamm verfügt, einen Arbeitsplatz, z. B. im Rahmen einer Bürogemeinschaft und/odere einer freien Mitarbeit in unserer Kanzlei zu bieten.</p>
-        <p>Geplant ist längerfristig die Übergabe der Kanzlei an eine/n Nachfolger/in , der/dem sich damit sodann die Möglichkeit eröffnen könnte, unsere Mandanten und unser Umfeld kennenzulernen.</p>
-    </div>
+  <p class="title">Steuerberater (m/w/d)</p>
+  <h3 class="subtitle">Ausschreibung</h3>
+  <p>Wir schreiben derzeit eine Anstellung für eine/n Steuerberater/in, entweder im Rahmen eines Anstellungsverhältnisses gem. § 58 StBerG oder einer freiberuflichen Zusammenarbeit aus. Es besteht auch die Möglichkeit, einer/m Kollegen/in der/die bereits selbst über einen eigenen kleinen Mandantenstamm verfügt, einen Arbeitsplatz, z. B. im Rahmen einer Bürogemeinschaft und/odere einer freien Mitarbeit in unserer Kanzlei zu bieten.</p>
+  <p>Geplant ist längerfristig die Übergabe der Kanzlei an eine/n Nachfolger/in , der/dem sich damit sodann die Möglichkeit eröffnen könnte, unsere Mandanten und unser Umfeld kennenzulernen.</p>
 </ngx-smart-modal>
 <ngx-smart-modal #servicesModal identifier="servicesModal" [closable]="true" [dismissable]="true" [escapable]="true">
-    <div class="container">
-        <p class="title">Unsere Dienstleistungen ...</p>
-        <h3 class="subtitle">... im Detail</h3>
-        <p>Dieser Inhalt befindet sich noch in der Erstellung.</p>
-    </div>
+  <p class="title">Unsere Dienstleistungen ...</p>
+  <h3 class="subtitle">... im Detail</h3>
+  <p>Dieser Inhalt befindet sich noch in der Erstellung.</p>
 </ngx-smart-modal>

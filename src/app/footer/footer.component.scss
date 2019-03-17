@@ -6,15 +6,27 @@
 	padding-top: 1.5rem;
 	background-color: $white;
 }
+
 .content {
 	color: $dark;
 	font-size: 0.9rem;
 }
+
 a {
 	color: $black;
 }
+
 a:hover {
 	color: $red;
+}
+
+.link {
+  color: $primary;
+}
+
+.link:hover {
+  text-decoration: underline;
+  text-decoration-color: $primary;
 }
 
 .subtitle .title{
@@ -37,4 +49,12 @@ a:hover {
 	position: absolute;
 	right: 0.75rem;
 	bottom: -3.5rem;
+}
+
+.title {
+  color: $primary;
+}
+
+strong {
+  color: #4a4a4a;
 }

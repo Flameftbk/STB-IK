@@ -6,16 +6,71 @@ $transition-duration: 700ms;
 $transition-timing-function: ease-in-out;
 @import "~ngx-smart-modal/ngx-smart-modal";
 
+
+.nsm-dialog {
+  position: fixed;
+  top: calc(50vh - (85vh / 2));
+  left: calc(50vw - (85vw / 2));
+  width: 85vw;
+  max-height: 80vh;
+  max-width: 85vw;
+  overflow: scroll;
+}
+
+.nsm-content {
+  width: 100%;
+  max-height: 80vh;
+  height: auto;
+  overflow: scroll;
+  padding: 1.5em;
+  margin: 0 auto;
+}
+
+
+.media-content {
+  word-break: break-word;
+}
+
+.nsm-content::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 5px;
+}
+
+.nsm-content::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: $primary;
+  -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: $primary;
+  -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
 a {
   color: $white;
+}
+
+.link {
+  color: $primary;
+  text-overflow: ellipsis;
+}
+
+.link:hover {
+  text-decoration: underline;
+  text-decoration-color: $primary;
 }
 
 a:hover {
   color: $primary;
 }
 
+
 html {
   scroll-behavior: smooth;
+  overscroll-behavior-x: none;
+  overscroll-behavior-y: none;
 }
 
 .brand-logo {
@@ -144,6 +199,11 @@ only screen and (min-device-pixel-ratio: 1.5){
   position: fixed;
   top: 1.5rem;
   right: 5rem;
+}
+
+.rounded-edges {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
 /* open-sans-regular - latin */

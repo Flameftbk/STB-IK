@@ -54,32 +54,32 @@ export class ContentComponent implements OnInit {
 
   startTour() {
     this.ts.tourActive = true;
-    this.scrollTo(0.70);
+    this.scrollTo(0.65);
     setTimeout(() => {
       if (this.ts.stopped === true) {
         return;
       }
-      this.scrollTo(1.70);
+      this.scrollTo(1.65);
       setTimeout(() => {
         if (this.ts.stopped === true) {
           return;
         }
-        this.scrollTo(2.70);
+        this.scrollTo(2.65);
         setTimeout(() => {
           if (this.ts.stopped === true) {
             return;
           }
-          this.scrollTo(3.70);
+          this.scrollTo(3.65);
           setTimeout(() => {
             if (this.ts.stopped === true) {
               return;
             }
-            this.scrollTo(4.70);
+            this.scrollTo(4.65);
             setTimeout(() => {
               if (this.ts.stopped === true) {
                 return;
               }
-              this.scrollTo(5.8250);
+              this.scrollTo(5.85);
               this.ts.tourActive = false;
             }, 5000);
           }, 5000);
