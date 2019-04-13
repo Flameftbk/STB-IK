@@ -14,7 +14,7 @@ $transition-timing-function: ease-in-out;
   width: 85vw;
   max-height: 80vh;
   max-width: 85vw;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .nsm-content {
@@ -31,39 +31,22 @@ $transition-timing-function: ease-in-out;
   word-break: break-word;
 }
 
-body::-webkit-scrollbar {
+::-webkit-scrollbar {
   width:8px;
 }
 
-body::-webkit-scrollbar-track {
+:-webkit-scrollbar-track:no-button {
   display: none;
 }
 
-body::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   border-radius: 5px;
   background-color: $primary;
   -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
 }
 
 /* set button(top and bottom of the scrollbar) */
-.nsm-content::-webkit-scrollbar-button {display:none}
-
-.nsm-content::-webkit-scrollbar {
-  width:8px;
-}
-
-.nsm-content::-webkit-scrollbar-track {
-  display: none;
-}
-
-.nsm-content::-webkit-scrollbar-thumb {
-  border-radius: 5px;
-  background-color: $primary;
-  -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
-}
-
-/* set button(top and bottom of the scrollbar) */
-.nsm-content::-webkit-scrollbar-button {display:none}
+::-webkit-scrollbar-button {display:none}
 
 a {
   color: $white;
