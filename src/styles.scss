@@ -31,9 +31,29 @@ $transition-timing-function: ease-in-out;
   word-break: break-word;
 }
 
+body::-webkit-scrollbar {
+  width:8px;
+}
+
+body::-webkit-scrollbar-track {
+  display: none;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: $primary;
+  -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+/* set button(top and bottom of the scrollbar) */
+.nsm-content::-webkit-scrollbar-button {display:none}
+
 .nsm-content::-webkit-scrollbar {
-  -webkit-appearance: none;
-  width: 5px;
+  width:8px;
+}
+
+.nsm-content::-webkit-scrollbar-track {
+  display: none;
 }
 
 .nsm-content::-webkit-scrollbar-thumb {
@@ -42,11 +62,8 @@ $transition-timing-function: ease-in-out;
   -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
 }
 
-::-webkit-scrollbar-thumb {
-  border-radius: 5px;
-  background-color: $primary;
-  -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
-}
+/* set button(top and bottom of the scrollbar) */
+.nsm-content::-webkit-scrollbar-button {display:none}
 
 a {
   color: $white;
