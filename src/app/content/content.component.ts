@@ -19,8 +19,8 @@ export class ContentComponent implements OnInit {
   ngOnInit() {
     setTimeout(() => {
       const mapProp = {
-        center: new google.maps.LatLng(52.0120184, 8.5977109),
-        zoom: 15,
+        center: new google.maps.LatLng(52.004637, 8.560012),
+        zoom: 16,
         scrollwheel: false,
         mapTypeId: google.maps.MapTypeId.ROADMAP
       };
@@ -29,7 +29,7 @@ export class ContentComponent implements OnInit {
         map: this.map,
         draggable: false,
         animation: google.maps.Animation.DROP,
-        position: {lat: 52.0122184, lng: 8.5982909}
+        position: {lat: 52.004637, lng: 8.560012}
       });
       this.marker.addListener('click', this.toggleBounce);
     }, 1000);
