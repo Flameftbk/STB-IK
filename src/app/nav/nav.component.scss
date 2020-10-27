@@ -1,0 +1,38 @@
+.reading-progress {
+  z-index: 1;
+  height: 3.5rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+}
+
+.progress-bar {
+  left: 0;
+  position: fixed;
+  top: 0;
+  height: 3.5rem;
+  background: #880807;
+  width: 0;
+  display: block;
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 6s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+	100% {
+		opacity: 1;
+	}
+}

@@ -31,23 +31,6 @@ $transition-timing-function: ease-in-out;
   word-break: break-word;
 }
 
-::-webkit-scrollbar {
-  width:8px;
-}
-
-:-webkit-scrollbar-track:no-button {
-  display: none;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 5px;
-  background-color: $primary;
-  -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
-}
-
-/* set button(top and bottom of the scrollbar) */
-::-webkit-scrollbar-button {display:none}
-
 a {
   color: $white;
 }
@@ -69,8 +52,6 @@ a:hover {
 
 html {
   scroll-behavior: smooth;
-  overscroll-behavior-x: none;
-  overscroll-behavior-y: none;
 }
 
 .brand-logo {
@@ -80,6 +61,7 @@ html {
 
 body {
   background-color: #e2e2ec;
+  overflow: hidden; /* Hide scrollbars */
 }
 
 .padding-general {
@@ -89,6 +71,17 @@ body {
 
 .hidden {
   display: none;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 nav {
