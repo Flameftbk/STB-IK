@@ -1,5 +1,6 @@
 {
   "projects": {
-    "stb-ik": "steuerberater-ingo-kneisel"
+    "stb-ik": "steuerberater-ingo-kneisel",
+    "default": "steuerberater-ingo-kneisel"
   }
 }

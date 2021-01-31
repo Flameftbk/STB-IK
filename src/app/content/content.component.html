@@ -345,6 +345,7 @@
         <a class="link is-hidden-tablet" href="mailto:nicolaklein@ingo-kneisel.de">E-Mail</a>
       </div>
     </article>
+    <hr />
     <article class="media">
       <figure class="media-left">
         <figure class="image is-96x96 is-rounded">
@@ -354,11 +355,15 @@
       <div class="media-content">
         <p><strong>Ingo Kneisel</strong></p>
         <p>Steuerberater, vereidigter Buchprüfer</p>
-        <p><span class="is-hidden-mobile">Durchwahl: </span>0521 92420 - 21</p>
+        <a class="button is-primary is-small" (click)="goToYourXpert()">
+          <strong>YourXpert</strong>
+        </a>
+        <br>
         <a class="link is-hidden-mobile" href="mailto:info@ingo-kneisel.de">info@ingo-kneisel.de</a>
         <a class="link is-hidden-tablet" href="mailto:info@ingo-kneisel.de">E-Mail</a>
       </div>
     </article>
+    <hr />
   </div>
 </ngx-smart-modal>
 <ngx-smart-modal #jobModal1 identifier="jobModal1" [closable]="true" [dismissable]="true" [escapable]="true">
