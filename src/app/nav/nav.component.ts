@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TourService } from '../tour.service';
 import { HostListener, Inject } from "@angular/core";
-import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-nav',
@@ -16,17 +15,12 @@ export class NavComponent implements OnInit {
   ngOnInit() {
   }
 
-  // ===========================================================================
-  // TRY THIS
-  // ===========================================================================
   @HostListener("window:scroll", [])
   getScrollPercent() {
     var h = document.documentElement, 
         b = document.body,
         st = 'scrollTop',
         sh = 'scrollHeight';
-        console.log('Acti');
-        console.log(this.currentScroll);
         this.currentScroll = (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
     return this.currentScroll;
 }
